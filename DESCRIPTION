@@ -1,13 +1,13 @@
 Package: jbmisc
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
+Title: Jack Bailey's R functions and templates.
+Version: 1.0
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Jack",
+           family = "Bailey",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
+           email = "jack.bailey@manchester.ac.uk",
            comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
+Description: This package is a simple repository of convenience functions that I use for my work, R Markdown templates, and beamer slide templates.
 License: What license it uses
 Encoding: UTF-8
 LazyData: true

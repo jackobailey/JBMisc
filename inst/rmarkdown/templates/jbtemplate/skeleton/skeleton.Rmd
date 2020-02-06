@@ -1,0 +1,37 @@
+---
+title: |
+  | Manuscript Title
+author: |
+  | Jack Bailey
+date: |
+  | \small This version `r format(Sys.time(), '%B %d, %Y')`
+abstract: |
+  | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam, tortor in pulvinar suscipit, mi nisi faucibus tortor, quis accumsan leo dolor vel quam. In at erat nunc. Praesent nec elit faucibus, aliquet ipsum eu, vehicula erat. In hac habitasse platea dictumst. Sed augue lectus, tempor nec odio consequat, tempor tempus enim. Etiam tincidunt porta sem, sed convallis leo ultricies id. Ut ut urna ut leo volutpat eleifend.
+indent: yes
+fontsize: 12pt
+geometry: margin = 1.15in
+subparagraph: yes
+compact-title: false
+# bibliography: _assets/master.bib
+biblio-style: _assets/apsr.bst
+classoption: a4paper
+output: 
+  bookdown::pdf_document2: 
+    latex_engine: xelatex
+    toc: false
+    keep_tex: false
+    includes:
+      in_header:
+        - _assets/rmd-preamble.tex
+    number_sections: false
+    fig_caption: true
+---
+
+# Introduction
+
+Maecenas rhoncus ipsum a tortor iaculis mollis. Morbi tincidunt ipsum at justo convallis, eget laoreet eros volutpat. Sed tortor nunc, interdum eget malesuada quis, blandit at lorem. Duis lectus leo, facilisis sed augue eget, tincidunt placerat nunc. Etiam porttitor lectus vel ipsum facilisis, id aliquam ante ultricies. Nunc tempor ligula vitae ante scelerisque faucibus. Sed sollicitudin eleifend lobortis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur a turpis quis dolor porttitor fringilla id ut felis. Nunc et viverra neque, quis lobortis quam. Aliquam tempus mauris non tellus tincidunt pretium. Sed metus elit, eleifend ut mauris ac, rhoncus commodo magna. Quisque in ornare velit. Suspendisse nec est nec tellus suscipit sodales eget ut nibh.
+
+
+# References
+
+<div id="refs"></div>
