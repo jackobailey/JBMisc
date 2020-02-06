@@ -1,2 +1,7 @@
-# JBMisc
-This package contains functions and templates that I use for my work.
+# jbmisc
+
+This package contains:
+
+- Convenience functions that I use for my work
+- The `R` Markdown template that I use for my papers
+- The beamer template that I use for my presentations
