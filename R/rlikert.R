@@ -19,10 +19,10 @@ rlikert <- function(n = 100,
                     sd = NULL){
 
   # Warnings in case things go wrong
-  if(length < 2){
-    stop("length must be greater than or equal to 2")
-  } else if(n <= 0){
-    stop("n must be greater than 0")
+  if(length <= 2){
+    stop("length must be greater than 2")
+  } else if(n <= 1){
+    stop("n must be greater than 1")
   } else if(is.null(sd) == F) {
     if(sd <= 0){
       stop("sd must be greater than 0")
