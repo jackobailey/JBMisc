@@ -1,4 +1,4 @@
-#' Jack Bailey's Custom Theme.
+#' Jack Bailey's Custom ggplot Theme.
 #'
 #' This is a convenience function that makes it easier for me to make nice plots. It is an extension of theme_minimal() in ggplot2. It removes some lines, adds others, and changes the font to Cabin.
 #' @export
@@ -10,7 +10,7 @@ theme_bailey <- function(){
           axis.line = element_line(),
           axis.title.x = element_text(family = "Cabin SemiBold", margin = margin(t = 8), size = 8),
           axis.text.x = element_text(color = "black", size = 8),
-          axis.ticks.x = element_line(),
+          axis.ticks.x = element_line(color = "black"),
           axis.title.y = element_text(family = "Cabin SemiBold", margin = margin(r = 8), size = 8),
           axis.text.y = element_text(color = "black", size = 8),
           strip.text = element_text(family = "Cabin SemiBold", size = 8),

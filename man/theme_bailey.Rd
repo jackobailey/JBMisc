@@ -2,7 +2,7 @@
 % Please edit documentation in R/theme_bailey.R
 \name{theme_bailey}
 \alias{theme_bailey}
-\title{Jack Bailey's Custom Theme.}
+\title{Jack Bailey's Custom ggplot Theme.}
 \usage{
 theme_bailey()
 }
