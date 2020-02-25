@@ -1,0 +1,15 @@
+#' Generate Placeholder Text
+#'
+#' This function generates placeholder text ("Lorem ipsum...") as needed.
+#'
+#' @param length The length of the resulting character string.
+#' @return A character string.
+#' @examples
+#' lorem(length = 11)
+#' @export
+
+lorem <- function(length = 1){
+  substring("Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac lectus nisi. Phasellus sollicitudin consectetur nunc, in ultricies ex iaculis ac. Etiam et odio sagittis, mattis ligula at, interdum sem. Aliquam tristique aliquam eleifend. Suspendisse potenti. Curabitur ullamcorper mi nibh, eu posuere augue tempus vel. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam molestie interdum volutpat. Suspendisse consequat in enim et porttitor. Aliquam convallis libero non risus scelerisque, id interdum ex egestas. Morbi vitae nisi sit amet arcu varius eleifend. Aliquam erat volutpat. Sed euismod iaculis lectus ut rutrum. Aenean non orci quis arcu sollicitudin feugiat a a turpis. Curabitur sed imperdiet ex, quis convallis dolor. In euismod nibh at varius cursus. Integer condimentum lacus et justo pulvinar scelerisque. Maecenas tristique fringilla elit in congue. Etiam placerat leo eu purus faucibus pretium at non diam. Donec scelerisque convallis ante et sodales. Vestibulum id facilisis justo, quis euismod leo. Duis ac fringilla diam. Etiam sed iaculis metus, eget interdum est. Pellentesque porta cursus velit et egestas. Etiam et fermentum eros. Quisque fermentum, metus non maximus scelerisque, felis nisl scelerisque ipsum, sit amet imperdiet nulla massa ut felis. Nunc dictum mi enim, vel maximus dolor scelerisque eget. Proin arcu libero, lacinia eget magna sed, aliquet auctor mauris. Sed ultrices sem eu sagittis efficitur. Donec sodales, neque non elementum facilisis, lorem elit facilisis risus, vel congue tortor eros at purus. Sed ante lacus, sollicitudin ultricies neque ac, rhoncus convallis urna. Curabitur imperdiet elementum ligula, eget imperdiet erat tempor sed. Etiam consequat, quam tempus venenatis aliquet, dolor ligula vehicula nulla, et imperdiet nulla ante non ipsum. Vivamus magna tortor, placerat eget orci id, faucibus tempor risus. Nulla justo nunc, elementum non ultrices ut, facilisis vitae turpis. Morbi pretium vehicula leo, et pellentesque neque sagittis in. Donec at diam purus. Suspendisse vitae velit viverra libero tincidunt lacinia laoreet in urna. Nulla ut arcu pellentesque, condimentum enim et, ullamcorper neque. Donec elementum nisi sed consectetur porttitor. Nullam at imperdiet velit. Vivamus sagittis tincidunt ultricies. Pellentesque iaculis lectus ut turpis consequat, ut viverra tortor pharetra. Phasellus arcu sapien, consequat vitae ex non, dignissim aliquam magna. Vestibulum eget lorem tincidunt, fermentum arcu eu, convallis purus. Proin faucibus tempus lacus sit amet faucibus. Proin dictum vehicula est, non finibus erat iaculis sit amet. Sed dignissim nunc vel elementum iaculis. Cras at venenatis massa. Phasellus pharetra mi pharetra, accumsan tortor nec, consequat ex. Nam eu elit vel urna tempor auctor.",
+            first = 1,
+            last = length)
+}
