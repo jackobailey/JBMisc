@@ -15,7 +15,7 @@ theme_bailey <- function(){
           axis.ticks.x = element_line(),
           axis.title.y = element_text(family = "Cabin", face = "bold", size = rel(1)),
           axis.text.y = element_text(color = "black", size = rel(1)),
-          strip.text = element_text(family = "Cabin", face = "bold", size = rel(1.2)),
+          strip.text = element_text(family = "Cabin", face = "bold", size = rel(1)),
           panel.spacing = unit(.3, "cm"),
           panel.grid.major.y = element_line(size = .5),
           panel.grid.minor.y = element_blank(),
