@@ -4,16 +4,24 @@
 \alias{rlikert}
 \title{Simulate Likert-Type Data}
 \usage{
-rlikert(n = 100, length = 5, mean = 0, disc = 0, sd = NULL)
+rlikert(
+  n = 1000,
+  t1 = -0.84,
+  t2 = -0.25,
+  t3 = 0.25,
+  t4 = 0.84,
+  mean = 0,
+  disc = 0
+)
 }
 \arguments{
 \item{n}{The number of random outcomes to generate.}
 
-\item{length}{The number of response options.}
-
 \item{mean}{The mean of the latent continuous variable that underpins the ordinal outcome. Defaults to 0.}
 
 \item{disc}{The discrimination of the latent continuous variable that underpins the ordinal outcome. Defaults to 0.}
+
+\item{length}{The number of response options.}
 
 \item{sd}{The standard deviation of the latent continuous variable that underpins the ordinal outcome. Defaults to NULL.}
 }

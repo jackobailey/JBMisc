@@ -14,8 +14,8 @@
 rescale <- function(x, type = "z", na.rm = T){
   if(is.numeric(x) == F){
     warning("x must be a vector of numeric data.")
-  } else if(!(type %in% c("z", "mean", "gelman"))){
-    warning('x must be one of "z", "mean", or "gelman".')
+  } else if(!(type %in% c("z", "mean", "gelman", "01"))){
+    warning('x must be one of "z", "mean", "gelman", or "01".')
   } else if(type == "z"){
     (x - mean(x, na.rm = na.rm))/sd(x, na.rm = na.rm)
   } else if (type == "mean"){
