@@ -3,7 +3,7 @@
 #' This functions makes it easier to rescale continuous variables.
 #'
 #' @param x A vector of interval-type data to standardise.
-#' @param type One of "z", "mean", "gelman". Option "z" converts the scale to z-scores. Option "mean" rescales the data so that its mean is zero. Option "gelman" rescales the data so that it is centred on zero and a one-unit increase or decrease corresponds with the scale moving to its 97.5th and 2.5th percentile.
+#' @param type One of "z", "mean", "gelman", "01". Option "z" converts the scale to z-scores. Option "mean" rescales the data so that its mean is zero. Option "gelman" rescales the data so that it is centred on zero and a one-unit increase or decrease corresponds with the scale moving to its 97.5th and 2.5th percentile. Option "01" rescales the data from zero to one.
 #' @param na.rm Remove missing data? Defaults to TRUE.
 #' @return A vector of rescaled data.
 #' @examples
@@ -22,5 +22,8 @@ rescale <- function(x, type = "z", na.rm = T){
     (x - mean(x, na.rm = na.rm))
   } else if(type == "gelman") {
     (x - mean(x, na.rm = na.rm))/(qnorm(.975)*sd(x, na.rm = na.rm))
+  } else if(type == "01") {
+    x <- x + abs(min(x))
+    x/max(x)
   }
 }
