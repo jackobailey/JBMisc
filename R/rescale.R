@@ -23,7 +23,7 @@ rescale <- function(x, type = "z", na.rm = T){
   } else if(type == "gelman") {
     (x - mean(x, na.rm = na.rm))/(qnorm(.975)*sd(x, na.rm = na.rm))
   } else if(type == "01") {
-    x <- x + abs(min(x, na.rm = na.rm))
+    x <- x - abs(min(x, na.rm = na.rm))
     x/max(x, na.rm = na.rm)
   }
 }
