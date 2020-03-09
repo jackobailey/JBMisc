@@ -24,6 +24,6 @@ rescale <- function(x, type = "z", na.rm = T){
     (x - mean(x, na.rm = na.rm))/(qnorm(.975)*sd(x, na.rm = na.rm))
   } else if(type == "01") {
     x <- x + abs(min(x, na.rm = na.rm))
-    x/max(x)
+    x/max(x, na.rm = na.rm)
   }
 }
