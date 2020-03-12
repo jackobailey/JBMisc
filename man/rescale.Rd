@@ -9,7 +9,7 @@ rescale(x, type = "z", na.rm = T)
 \arguments{
 \item{x}{A vector of interval-type data to standardise.}
 
-\item{type}{One of "z", "mean", "gelman", "01". Option "z" converts the scale to z-scores. Option "mean" rescales the data so that its mean is zero. Option "gelman" rescales the data so that it is centred on zero and a one-unit increase or decrease corresponds with the scale moving to its 97.5th and 2.5th percentile. Option "01" rescales the data from zero to one.}
+\item{type}{One of "z", "mean", "gelman", "01". Option "z" converts the scale to z-scores. Option "mean" rescales the data so that its mean is zero. Option "gelman" rescales the data so that it is centred on zero and a one-unit increase or decrease corresponds with the scale moving to its 97.5th and 2.5th percentile. Option "01" rescales the data from 0 to 1. Option "11" rescales the data from -1 to 1.}
 
 \item{na.rm}{Remove missing data? Defaults to TRUE.}
 }
