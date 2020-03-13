@@ -8,7 +8,7 @@ theme_bailey <- function(){
   theme_minimal() +
     theme(text = element_text(family = "Cabin", color = "black", size = 8),
           plot.title = element_text(family = "Cabin", face = "bold", size = rel(1.4), hjust = 0),
-          plot.subtitle = element_text(family = "Cabin", size = rel(1), hjust = 0),
+          plot.subtitle = element_text(family = "Cabin", size = rel(1), hjust = 0, margin = margin(b = 10)),
           axis.line = element_line(),
           axis.title.x = element_text(family = "Cabin", face = "bold", margin = margin(t = 10), size = rel(1)),
           axis.text.x = element_text(color = "black", size = rel(1)),
