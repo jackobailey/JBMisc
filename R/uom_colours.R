@@ -45,5 +45,5 @@ uom_colours <- function(...) {
 
   if (is.null(choice)) return(cols)
 
-  c(cols[choice])
+  `names<-`(cols[choice], NULL)
 }
