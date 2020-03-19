@@ -2,6 +2,7 @@
 
 export(as_dummy)
 export(inv_logit)
+export(jb_cols)
 export(lorem)
 export(mark_na)
 export(rescale)
