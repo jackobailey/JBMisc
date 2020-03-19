@@ -38,7 +38,9 @@ uom_colours <- function(...) {
     `grey7` = "#D0D0D0",
     `grey8` = "#D9D9D9",
     `grey9` = "#E3E3E3",
-    `grey10` = "#ECECEC"
+    `grey10` = "#ECECEC",
+    `black` = "#000000",
+    `white` = "#FFFFFF"
   )
 
   if (is.null(choice))
