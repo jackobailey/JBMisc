@@ -43,8 +43,7 @@ uom_colours <- function(...) {
     `white` = "#FFFFFF"
   )
 
-  if (is.null(choice))
-    return(cols)
+  if (is.null(choice)) return(cols)
 
-  cols[choice]
+  c(cols[choice])
 }
