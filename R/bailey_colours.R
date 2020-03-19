@@ -4,7 +4,7 @@
 #' @export
 #'
 
-jb_cols <- function(...) {
+bailey_colours <- function(...) {
 
   choice <- c(...)
 
