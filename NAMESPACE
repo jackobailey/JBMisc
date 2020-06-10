@@ -2,9 +2,12 @@
 
 export(as_dummy)
 export(bailey_colours)
+export(in_text)
 export(inv_logit)
 export(lorem)
 export(mark_na)
+export(ncr)
+export(npr)
 export(rescale)
 export(rlikert)
 export(sample_n_of)
