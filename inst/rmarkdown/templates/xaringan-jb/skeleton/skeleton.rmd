@@ -1,5 +1,5 @@
 ---
-title: "Presentation Title: Yes, It Spans Two Lines Like Almost All of Them Do"
+title: "Witty Title: More Information on the Shocking Findings"
 author: "Jack Bailey"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 output:
@@ -17,10 +17,14 @@ output:
 ```{r setup, echo = F, include = F}
 
 # Load packages
+
+library(xaringanthemer)
 library(tidyverse)
 library(jbmisc)
 
+
 # To live preview your presentation, use xaringan:::inf_mr()
+# xaringanthemer has useful theme and scale options too.
   
 ```
 
