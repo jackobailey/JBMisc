@@ -1,0 +1,73 @@
+---
+title: "Presentation Title: Yes, It Spans Two Lines Like Almost All of Them Do"
+author: "Jack Bailey"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output:
+  xaringan::moon_reader:
+    css: "xaringan-jb.css"
+    lib_dir: libs
+    nature:
+      navigation:
+        scroll: false
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+```{r setup, echo = F, include = F}
+
+# Load packages
+library(tidyverse)
+library(jbmisc)
+
+# To live preview your presentation, use xaringan:::inf_mr()
+  
+```
+
+class: inverse, center, middle
+
+# New Section Slide
+
+---
+
+# Slide Title
+
+Here's some plain text, a little code, and some maths that pops up one by one.
+
+--
+
+```{r eval=FALSE, tidy=FALSE}
+x <- rnorm(100, 0, 1)
+```
+
+--
+
+$X_{i} \sim \mathrm{Normal}(0, 1) \text{ for } i \in 1..100$
+
+--
+
+Here's a free footnote too<sup>1</sup>.
+
+.footnote[
+[1] Hello!
+]
+
+---
+
+background-image: url("https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/images/117989main_image_feature_347_ys_full.jpg")
+background-position: 50% 50%
+background-size: 30%
+
+# Image Slide
+
+---
+
+class: center, middle
+
+# Thank You
+
+`r icon::fa("globe")` [**Website**](https://www.twitter.com/PoliSciJack)
+
+`r icon::fa("envelope")`  [**jack.bailey@manchester.ac.uk**](mailto:jack.bailey@manchester.ac.uk)
+
+`r icon::fa("twitter")` [**@PoliSciJack**](https://www.twitter.com/PoliSciJack)

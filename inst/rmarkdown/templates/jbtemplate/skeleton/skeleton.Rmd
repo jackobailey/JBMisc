@@ -2,17 +2,17 @@
 title: |
   | Manuscript Title
 author: |
-  | Jack Bailey
+  | Jack Bailey\thanks{This paper benefitted from much good advice. Particular thanks are due to X, Y, and Z for their helpful comments, all of which helped to improve the paper.}
 date: |
   | \small This version `r format(Sys.time(), '%B %d, %Y')`
 abstract: |
-  | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam, tortor in pulvinar suscipit, mi nisi faucibus tortor, quis accumsan leo dolor vel quam. In at erat nunc. Praesent nec elit faucibus, aliquet ipsum eu, vehicula erat. In hac habitasse platea dictumst. Sed augue lectus, tempor nec odio consequat, tempor tempus enim. Etiam tincidunt porta sem, sed convallis leo ultricies id. Ut ut urna ut leo volutpat eleifend.
+  | Everyone agrees that this issue is really important. But we do not know much about this specific question, although it matters a great deal, for these reasons. We approach the problem from this perspective. Our research design focuses on these cases and relies on these data, which we analyse using this method. Results show what we have learned about the question. They have these broader implications.
 indent: yes
 fontsize: 12pt
 geometry: margin = 1.15in
 subparagraph: yes
 compact-title: false
-# bibliography: _assets/master.bib
+bibliography: _assets/master.bib
 biblio-style: _assets/apsr.bst
 classoption: a4paper
 output: 
