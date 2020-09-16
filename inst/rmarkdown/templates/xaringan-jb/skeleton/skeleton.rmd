@@ -1,5 +1,5 @@
 ---
-title: "Witty Title: More Information on the Shocking Findings"
+title: "Witty Title: Some More Information on Your Shocking Findings"
 author: "Jack Bailey"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 output:
@@ -70,8 +70,8 @@ class: center, middle
 
 # Thank You
 
-`r icon::fa("globe")` [**Website**](https://www.twitter.com/PoliSciJack)
+`r #icon::fa("globe")` [**jack-bailey.co.uk**](https://www.jack-bailey.co.uk)
 
-`r icon::fa("envelope")`  [**jack.bailey@manchester.ac.uk**](mailto:jack.bailey@manchester.ac.uk)
+`r #icon::fa("envelope")`  [**jack.bailey@manchester.ac.uk**](mailto:jack.bailey@manchester.ac.uk)
 
-`r icon::fa("twitter")` [**@PoliSciJack**](https://www.twitter.com/PoliSciJack)
+`r #icon::fa("twitter")` [**@PoliSciJack**](https://www.twitter.com/PoliSciJack)
