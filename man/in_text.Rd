@@ -4,10 +4,12 @@
 \alias{in_text}
 \title{In-Text Summary Statistics}
 \usage{
-in_text(x, inside = T, probs = 0.95, digits = 2)
+in_text(x, text = NULL, inside = T, probs = 0.95, digits = 2)
 }
 \arguments{
 \item{x}{The distribution to summarise}
+
+\item{text}{A character string that follows and describes the point estimate.}
 
 \item{inside}{Should the median be inside or outside the brackets? Defaults to T.}
 
