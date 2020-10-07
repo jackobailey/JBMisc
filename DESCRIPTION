@@ -1,6 +1,6 @@
 Package: jbmisc
 Title: Jack Bailey's R functions and templates.
-Version: 1.0
+Version: 1.1
 Authors@R: 
     person(given = "Jack",
            family = "Bailey",
