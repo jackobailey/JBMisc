@@ -70,8 +70,8 @@ class: center, middle
 
 # Thank You
 
-`r #icon::fa("globe")` [**jack-bailey.co.uk**](https://www.jack-bailey.co.uk)
+[**jack-bailey.co.uk**](https://www.jack-bailey.co.uk)
 
-`r #icon::fa("envelope")`  [**jack.bailey@manchester.ac.uk**](mailto:jack.bailey@manchester.ac.uk)
+[**jack.bailey@manchester.ac.uk**](mailto:jack.bailey@manchester.ac.uk)
 
-`r #icon::fa("twitter")` [**@PoliSciJack**](https://www.twitter.com/PoliSciJack)
+[**@PoliSciJack**](https://www.twitter.com/PoliSciJack)
