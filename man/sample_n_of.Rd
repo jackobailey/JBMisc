@@ -19,6 +19,5 @@ sample_n_of(data, size, replace = TRUE, ...)
 Sample groups from a data set just as one would do using sample_n(). Based on a similar function from TJ Mahr's package tjmisc.
 }
 \examples{
-iris \%>\%
-sample_n_of(1000, )
+sample_n_of(iris, 2, replace = FALSE, Species)
 }

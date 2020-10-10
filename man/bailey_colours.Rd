@@ -6,6 +6,9 @@
 \usage{
 bailey_colours(...)
 }
+\arguments{
+\item{...}{The name of the colour you want.}
+}
 \description{
 This is a convenience function that makes it easier for me to make plots that use colours I like.
 }

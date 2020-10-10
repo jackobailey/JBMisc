@@ -17,13 +17,17 @@ rlikert(
 \arguments{
 \item{n}{The number of random outcomes to generate.}
 
+\item{t1}{The first threshold parameter. Defaults to -0.84.}
+
+\item{t2}{The second threshold parameter. Defaults to -0.25.}
+
+\item{t3}{The third threshold parameter. Defaults to 0.25.}
+
+\item{t4}{The fourth threshold parameter. Defaults to 0.84.}
+
 \item{mean}{The mean of the latent continuous variable that underpins the ordinal outcome. Defaults to 0.}
 
 \item{disc}{The discrimination of the latent continuous variable that underpins the ordinal outcome. Defaults to 0.}
-
-\item{length}{The number of response options.}
-
-\item{sd}{The standard deviation of the latent continuous variable that underpins the ordinal outcome. Defaults to NULL.}
 }
 \value{
 A vector of likert type data.

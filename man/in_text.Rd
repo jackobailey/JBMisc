@@ -24,5 +24,5 @@ A text string.
 Generate in-text summary statistics for posterior distributions from Bayesian models. Most useful when used in Rmarkdown documents.
 }
 \examples{
-rnorm(1e3, 0.5, .1) \%>\% in_text()
+in_text(rnorm(1e3, 0.5, .1))
 }

@@ -20,6 +20,6 @@ A vector of data, with missing data marked as NA.
 This function makes it easier to convert values to missing (NA).
 }
 \examples{
-x <- sample(c("Coffee", "Tea", "Hot Chocolate"), replace = T, size = 100)
+x <- sample(c("Coffee", "Tea", "Hot Chocolate"), replace = TRUE, size = 100)
 mark_na(x, term = "Coffee")
 }

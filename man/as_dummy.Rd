@@ -22,6 +22,6 @@ A vector of dummy data.
 This function takes away the need to rely on ifelse() to create dummy variables.
 }
 \examples{
-x <- sample(c("Coffee", "Tea", "Hot Chocolate"), replace = T, size = 100)
+x <- sample(c("Coffee", "Tea", "Hot Chocolate"), replace = TRUE, size = 100)
 as_dummy(x, term = "Coffee")
 }

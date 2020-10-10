@@ -6,6 +6,9 @@
 \usage{
 uom_colours(...)
 }
+\arguments{
+\item{...}{The name of the colour you want.}
+}
 \description{
 This is a convenience function that makes it easier for me to make plots that conform to the University of Manchester's corporate colour scheme.
 }
