@@ -9,7 +9,7 @@
 #' @param digits How many digits to round the summary statistics to. Defaults to 2.
 #' @return A text string.
 #' @examples
-#' rnorm(1e3, 0.5, .1) %>% in_text()
+#' in_text(rnorm(1e3, 0.5, .1))
 #' @export
 
 in_text <- function(x, text = NULL, inside = T, probs = .95, digits = 2){
@@ -17,11 +17,9 @@ in_text <- function(x, text = NULL, inside = T, probs = .95, digits = 2){
   # Get median of the distribution and round to
   # desired number of digits
 
-  m <-
-    x %>%
-    median() %>%
-    round(digits = digits) %>%
-    format(nsmall = digits)
+  m <- stats::median(x)
+  m <- round(m, digits = digits)
+  m <- format(m, nsmall = digits)
 
 
   # Add in text if necessary
@@ -33,20 +31,16 @@ in_text <- function(x, text = NULL, inside = T, probs = .95, digits = 2){
 
   # Get lower bound and round to desired digits
 
-  l <-
-    x %>%
-    quantile(probs = (1 - probs)/2) %>%
-    round(digits = digits) %>%
-    format(nsmall = digits)
+  l <- stats::quantile(x, probs = (1 - probs)/2)
+  l <- round(l, digits = digits)
+  l <- format(l, nsmall = digits)
 
 
   # Get upper bound and round to desired digits
 
-  u <-
-    x %>%
-    quantile(probs = probs + ((1 - probs)/2)) %>%
-    round(digits = digits) %>%
-    format(nsmall = digits)
+  u <- stats::quantile(x, probs = probs + ((1 - probs)/2))
+  u <- round(u, digits = digits)
+  u <- format(u, nsmall = digits)
 
 
   # Return in-text version

@@ -1,6 +1,7 @@
 #' University of Manchester Colour Palette.
 #'
 #' This is a convenience function that makes it easier for me to make plots that conform to the University of Manchester's corporate colour scheme.
+#' @param ... The name of the colour you want.
 #' @export
 #'
 

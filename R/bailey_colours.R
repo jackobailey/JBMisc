@@ -1,6 +1,7 @@
 #' Jack Bailey's Colour Palette.
 #'
 #' This is a convenience function that makes it easier for me to make plots that use colours I like.
+#' @param ... The name of the colour you want.
 #' @export
 #'
 

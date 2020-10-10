@@ -8,7 +8,7 @@
 #' @param labels If factor = T, a character vector to specify the names of the resulting levels (e.g. c("Tails", "Heads")). Defaults to c("Off", "On").
 #' @return A vector of dummy data.
 #' @examples
-#' x <- sample(c("Coffee", "Tea", "Hot Chocolate"), replace = T, size = 100)
+#' x <- sample(c("Coffee", "Tea", "Hot Chocolate"), replace = TRUE, size = 100)
 #' as_dummy(x, term = "Coffee")
 #' @export
 
@@ -20,8 +20,8 @@ as_dummy <- function(x, term, factor = F, labels = c("Off", "On")){
 
   if(factor == T){
     x <-
-      x %>%
       factor(
+        x,
         labels = labels
       )
   }

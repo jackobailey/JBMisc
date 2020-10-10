@@ -7,19 +7,17 @@
 #' @param replace Whether to sample with replacement or not. Defaults to TRUE.
 #' @param ... The group you want to sample.
 #' @examples
-#' iris %>%
-#' sample_n_of(1000, )
+#' sample_n_of(iris, 2, replace = FALSE, Species)
 #' @export
 
 sample_n_of <- function(data, size, replace = TRUE, ...) {
-  dots <- quos(...)
 
-  group_ids <- data %>%
-    group_by(!!! dots) %>%
-    group_indices()
+  dots <- ggplot2::quos(...)
+
+  group_ids <-  dplyr::group_by(.data = data,!!! dots)
+  group_ids <- dplyr::group_indices(.data = group_ids)
 
   sampled_groups <- sample(unique(group_ids), size, replace = replace)
 
-  data %>%
-    filter(group_ids %in% sampled_groups)
+  dplyr::filter(.data = data, group_ids %in% sampled_groups)
 }

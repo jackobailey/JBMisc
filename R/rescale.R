@@ -17,11 +17,11 @@ rescale <- function(x, type = "z", na.rm = T){
   } else if(!(type %in% c("z", "mean", "gelman", "01"))){
     warning('x must be one of "z", "mean", "gelman", or "01".')
   } else if(type == "z"){
-    (x - mean(x, na.rm = na.rm))/sd(x, na.rm = na.rm)
+    (x - mean(x, na.rm = na.rm))/stats::sd(x, na.rm = na.rm)
   } else if (type == "mean"){
     (x - mean(x, na.rm = na.rm))
   } else if(type == "gelman") {
-    (x - mean(x, na.rm = na.rm))/(qnorm(.975)*sd(x, na.rm = na.rm))
+    (x - mean(x, na.rm = na.rm))/(stats::qnorm(.975)*stats::sd(x, na.rm = na.rm))
   } else if(type == "01") {
     x <- x - min(x, na.rm = na.rm)
     x/max(x, na.rm = na.rm)

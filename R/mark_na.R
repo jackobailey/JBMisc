@@ -7,7 +7,7 @@
 #' @param drop Drop missing levels? Defaults to TRUE.
 #' @return A vector of data, with missing data marked as NA.
 #' @examples
-#' x <- sample(c("Coffee", "Tea", "Hot Chocolate"), replace = T, size = 100)
+#' x <- sample(c("Coffee", "Tea", "Hot Chocolate"), replace = TRUE, size = 100)
 #' mark_na(x, term = "Coffee")
 #' @export
 mark_na <- function(x, term, drop = T){
