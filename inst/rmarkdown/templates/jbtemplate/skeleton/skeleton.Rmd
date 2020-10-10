@@ -1,10 +1,10 @@
 ---
 title: |
-  | Manuscript Title
+  | Manuscript Title\thanks{This article benefitted from much useful feedback. I owe particular thanks to X, Y, and Z for their time and their advice.}
 author: |
-  | Jack Bailey\thanks{This paper benefitted from much good advice. Particular thanks are due to X, Y, and Z for their helpful comments, all of which helped to improve the paper.}
+  | Jack Bailey\thanks{Research Associate, Department of Politics, The University of Manchester, UK. If you have any comments or questions, feel free to contact me either by email (\href{mailto:jack.bailey@manchester.ac.uk}{jack.bailey@manchester.ac.uk}) or on Twitter (\href{https://www.twitter.com/PoliSciJack}{@PoliSciJack}).}
 date: |
-  | \small This version `r format(Sys.time(), '%B %d, %Y')`
+  | \small This version `r format(Sys.time(), '%B %d, %Y')`\thanks{Click \href{https://github.com/jackobailey}{here} for the most recent version of the paper and  \href{https://www.github.com/jackobailey}{here} for all associated replication materials.}.
 abstract: |
   | Everyone agrees that this issue is really important. But we do not know much about this specific question, although it matters a great deal, for these reasons. We approach the problem from this perspective. Our research design focuses on these cases and relies on these data, which we analyse using this method. Results show what we have learned about the question. They have these broader implications.
 indent: yes
