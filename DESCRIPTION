@@ -1,14 +1,17 @@
 Package: jbmisc
-Title: Jack Bailey's R functions and templates.
+Title: Jack Bailey's R functions and templates
 Version: 1.1
 Authors@R: 
     person(given = "Jack",
            family = "Bailey",
            role = c("aut", "cre"),
            email = "jack.bailey@manchester.ac.uk",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
+           comment = c(website = "https://www.jack-bailey.co.uk"))
 Description: This package is a simple repository of convenience functions that I use for my work, R Markdown templates, and beamer slide templates.
-License: What license it uses
+Imports:
+    dplyr,
+    magrittr
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.1.1
