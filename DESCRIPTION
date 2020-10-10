@@ -9,7 +9,10 @@ Authors@R:
            comment = c(website = "https://www.jack-bailey.co.uk"))
 Description: This package is a simple repository of convenience functions that I use for my work, R Markdown templates, and beamer slide templates.
 Imports:
+    stats,
     dplyr,
+    tibble,
+    ggplot2,
     magrittr
 License: MIT + file LICENSE
 Encoding: UTF-8
