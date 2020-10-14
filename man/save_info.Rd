@@ -4,7 +4,7 @@
 \alias{save_info}
 \title{Quicky and Easy Session Info .txt Files}
 \usage{
-save_info(path = "session_info.txt")
+save_info(path = "/Users/jackbailey/Desktop/session_info.txt")
 }
 \arguments{
 \item{path}{The file path to where you would like to save your session information.}
