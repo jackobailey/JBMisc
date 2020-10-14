@@ -4,10 +4,12 @@
 #'
 #' @param path The file path to where you would like to save your session information.
 #' @examples
-#' save_info("/Users/jackbailey/Desktop/session_info.txt")
+#' \dontrun{
+#' save_info()
+#' }
 #' @export
 
-save_info <- function(path = "/Users/jackbailey/Desktop/session_info.txt"){
+save_info <- function(path = "session_info.txt"){
 
   sink(file = path)
   cat(paste0("Analysis completed: ", Sys.Date(), "\n\n"))
@@ -15,4 +17,3 @@ save_info <- function(path = "/Users/jackbailey/Desktop/session_info.txt"){
   sink()
 
 }
-save_info()

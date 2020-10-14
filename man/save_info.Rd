@@ -4,7 +4,7 @@
 \alias{save_info}
 \title{Quicky and Easy Session Info .txt Files}
 \usage{
-save_info(path = "/Users/jackbailey/Desktop/session_info.txt")
+save_info(path = "session_info.txt")
 }
 \arguments{
 \item{path}{The file path to where you would like to save your session information.}
@@ -13,5 +13,7 @@ save_info(path = "/Users/jackbailey/Desktop/session_info.txt")
 This function provides a simple way to export session information to disk.
 }
 \examples{
-save_info("/Users/jackbailey/Desktop/session_info.txt")
+\dontrun{
+save_info()
+}
 }
