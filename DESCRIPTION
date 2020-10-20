@@ -12,6 +12,7 @@ Imports:
     utils,
     stats,
     dplyr,
+    purrr,
     tibble,
     ggplot2,
     magrittr

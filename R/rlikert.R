@@ -39,24 +39,19 @@ rlikert <- function(n = 1e3,
       p5 = 1 - stats::pnorm(t4, mean, sd)
     )
 
-  # For each individual, sample a single response category
+  # Calculate outcome
   dta <-
     dplyr::mutate(
       .data = dta,
-      resp = NA
-      )
-
-  for (i in 1:nrow(dta)) {
-    dta$resp[i] <-
-      sample(
-        x = c(1:5),
-        size = 1,
-        prob = c(dta$p1[i], dta$p2[i], dta$p3[i], dta$p4[i], dta$p5[i])
-      )
-  }
+      resp =
+        purrr::pmap(
+          list(a = dta$p1, b = dta$p2, c = dta$p3, d = dta$p4, e = dta$p5),
+          .f = function(a, b, c, d, e) sample(x = 1:5, size = 1, prob = c(a, b, c, d, e))
+        )
+    )
 
   # Return
-  dta$resp
+  return(dta$resp)
 
 }
 
