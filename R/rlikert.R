@@ -44,14 +44,14 @@ rlikert <- function(n = 1e3,
     dplyr::mutate(
       .data = dta,
       resp =
-        purrr::pmap(
+        purrr::pmap_dbl(
           list(a = dta$p1, b = dta$p2, c = dta$p3, d = dta$p4, e = dta$p5),
           .f = function(a, b, c, d, e) sample(x = 1:5, size = 1, prob = c(a, b, c, d, e))
         )
     )
 
   # Return
-  return(dta$resp)
+  dta$resp
 
 }
 
