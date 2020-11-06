@@ -6,13 +6,13 @@
 #' @param text A character string that follows and describes the point estimate.
 #' @param inside Should the median be inside or outside the brackets? Defaults to T.
 #' @param probs The level at which to compute the lower and upper bounds. Defaults to 0.95.
-#' @param digits How many digits to round the summary statistics to. Defaults to 2.
+#' @param digits How many digits to round the summary statistics to. Defaults to 1.
 #' @return A text string.
 #' @examples
 #' in_text(rnorm(1e3, 0.5, .1))
 #' @export
 
-in_text <- function(x, text = NULL, inside = T, probs = .95, digits = 2){
+in_text <- function(x, text = NULL, inside = T, probs = .95, digits = 1){
 
   # Get median of the distribution and round to
   # desired number of digits

@@ -4,7 +4,7 @@
 \alias{in_text}
 \title{In-Text Summary Statistics}
 \usage{
-in_text(x, text = NULL, inside = T, probs = 0.95, digits = 2)
+in_text(x, text = NULL, inside = T, probs = 0.95, digits = 1)
 }
 \arguments{
 \item{x}{The distribution to summarise}
@@ -15,7 +15,7 @@ in_text(x, text = NULL, inside = T, probs = 0.95, digits = 2)
 
 \item{probs}{The level at which to compute the lower and upper bounds. Defaults to 0.95.}
 
-\item{digits}{How many digits to round the summary statistics to. Defaults to 2.}
+\item{digits}{How many digits to round the summary statistics to. Defaults to 1.}
 }
 \value{
 A text string.
