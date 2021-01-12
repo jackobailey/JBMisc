@@ -12,7 +12,7 @@
 save_info <- function(path = "session_info.txt"){
 
   sink(file = path)
-  cat(paste0("Analysis completed: ", Sys.Date(), "\n\n"))
+  cat(paste0("Analysis completed: ", Sys.time(), "\n\n"))
   print(utils::sessionInfo())
   sink()
 
