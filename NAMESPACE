@@ -2,7 +2,6 @@
 
 export(as_dummy)
 export(bailey_colours)
-export(compute_swing)
 export(in_text)
 export(inv_logit)
 export(lorem)
