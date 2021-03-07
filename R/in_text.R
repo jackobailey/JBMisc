@@ -25,7 +25,7 @@ in_text <- function(x, text = NULL, inside = T, probs = .95, digits = 1){
   # Add in text if necessary
 
   if(is.null(text) == F){
-    m <- paste(m, text)
+    m <- paste0(m, text)
   }
 
 
