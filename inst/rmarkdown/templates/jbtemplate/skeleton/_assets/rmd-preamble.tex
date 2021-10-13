@@ -14,14 +14,16 @@
 \newcommand{\srlab}[1]{\tag*{\textsf{\small{\textcolor{mygray}{#1}}}}}
 
 
+% Floats ----------
+
+% Set a higher threshold for float-only pages
+\renewcommand{\floatpagefraction}{.8}%
+
 
 % Maths ----------
 
 % Align decimals in tables
 \usepackage{dcolumn}
-
-% Add small fraction
-\usepackage{xfrac}
 
 
 
@@ -54,8 +56,6 @@
 
 % Turn off hyphenation of words across multiple lines
 \hyphenpenalty=100000
-
-
 
 \usepackage[small, sf, bf]{titlesec}
 
