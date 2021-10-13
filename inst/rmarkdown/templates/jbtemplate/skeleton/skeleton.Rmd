@@ -4,7 +4,9 @@ title: |
 author: |
   | Jack Bailey\thanks{Research Associate, Department of Politics, The University of Manchester, UK. If you have any comments or questions, feel free to contact me either by email (\href{mailto:jack.bailey@manchester.ac.uk}{jack.bailey@manchester.ac.uk}) or on Twitter (\href{https://www.twitter.com/PoliSciJack}{@PoliSciJack}).}
 date: |
-  | \small This version `r format(Sys.time(), '%B %d, %Y')`\thanks{Click \href{https://github.com/jackobailey}{here} for the most recent version of the paper and  \href{https://www.github.com/jackobailey}{here} for all associated replication materials.}.
+  | \small This version: `r format(Sys.time(), '%B %d, %Y')`
+  |
+  | Word count: X,XXX
 abstract: |
   | Everyone agrees that this issue is really important. But we do not know much about this specific question, although it matters a great deal, for these reasons. We approach the problem from this perspective. Our research design focuses on these cases and relies on these data, which we analyse using this method. Results show what we have learned about the question. They have these broader implications.
 indent: yes
@@ -12,6 +14,9 @@ fontsize: 12pt
 geometry: margin = 1.15in
 subparagraph: yes
 compact-title: false
+linkcolor: black
+urlcolor: violet
+citecolor: black
 bibliography: _assets/master.bib
 biblio-style: _assets/apsr.bst
 classoption: a4paper
@@ -27,11 +32,36 @@ output:
     fig_caption: true
 ---
 
+<!-- Latex setup -->
+\doublespacing
+\thispagestyle{empty}
+\clearpage
+\pagebreak
+\setcounter{page}{1}
+
+```{r setup, include = F}
+
+# Load packages
+
+library(tidyverse)
+library(jbmisc) # https://github.com/jackobailey/jbmisc
+library(brms)
+library(here)
+
+
+# Tell knitr to use Cairo PDF when rendering plots so that it uses nice fonts
+
+knitr::opts_chunk$set(dev = "cairo_pdf")
+
+```
+
 # Introduction
 
 Maecenas rhoncus ipsum a tortor iaculis mollis. Morbi tincidunt ipsum at justo convallis, eget laoreet eros volutpat. Sed tortor nunc, interdum eget malesuada quis, blandit at lorem. Duis lectus leo, facilisis sed augue eget, tincidunt placerat nunc. Etiam porttitor lectus vel ipsum facilisis, id aliquam ante ultricies. Nunc tempor ligula vitae ante scelerisque faucibus. Sed sollicitudin eleifend lobortis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur a turpis quis dolor porttitor fringilla id ut felis. Nunc et viverra neque, quis lobortis quam. Aliquam tempus mauris non tellus tincidunt pretium. Sed metus elit, eleifend ut mauris ac, rhoncus commodo magna. Quisque in ornare velit. Suspendisse nec est nec tellus suscipit sodales eget ut nibh.
 
+\pagebreak
 
 # References
 
-<div id="refs"></div>
+::: {#refs}
+:::
