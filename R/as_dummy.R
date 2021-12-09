@@ -36,7 +36,7 @@ as_dummy <- function(x, ..., factor = F, labels = c("Off", "On")){
       factor(
         x,
         levels = 0:1,
-        labels = c("Off", "On")
+        labels = labels
       )
   }
 
