@@ -3,28 +3,50 @@
 #' This function takes away the need to rely on ifelse() to create dummy variables.
 #'
 #' @param x A vector of factor data to convert to a dummy.
-#' @param term A vector of terms to recode as 1.
+#' @param ... Terms to recode as 1.
 #' @param factor Convert the dummy to a factor variable? Defaults to FALSE.
 #' @param labels If factor = T, a character vector to specify the names of the resulting levels (e.g. c("Tails", "Heads")). Defaults to c("Off", "On").
 #' @return A vector of dummy data.
 #' @examples
 #' x <- sample(c("Coffee", "Tea", "Hot Chocolate"), replace = TRUE, size = 100)
-#' as_dummy(x, term = "Coffee")
+#' as_dummy(x, Coffee)
 #' @export
 
-as_dummy <- function(x, term, factor = F, labels = c("Off", "On")){
+as_dummy <- function(x, ..., factor = T, labels = c("Off", "On")){
 
-  x <- ifelse(is.na(x) == T,
-              yes = NA,
-              no = ifelse(x %in% term, 1, 0))
+  # Convert ellipsis to vector
+
+  terms <- c(...)
+
+
+  # Create dummy variable
+
+  x <-
+    ifelse(
+      is.na(x) == T,
+      NA,
+      ifelse(
+        x %in% terms,
+        1,
+        0
+      )
+    )
+
+
+  # Convert to factor if desired
 
   if(factor == T){
     x <-
       factor(
         x,
-        labels = labels
+        levels = 0:1,
+        labels = c("Off", "On")
       )
   }
 
-  x
+
+  # Return x
+
+  return(x)
+
 }

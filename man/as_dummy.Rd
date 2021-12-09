@@ -4,12 +4,12 @@
 \alias{as_dummy}
 \title{Convert Factor Variables to Dummies}
 \usage{
-as_dummy(x, term, factor = F, labels = c("Off", "On"))
+as_dummy(x, ..., factor = T, labels = c("Off", "On"))
 }
 \arguments{
 \item{x}{A vector of factor data to convert to a dummy.}
 
-\item{term}{A vector of terms to recode as 1.}
+\item{...}{Terms to recode as 1.}
 
 \item{factor}{Convert the dummy to a factor variable? Defaults to FALSE.}
 
@@ -23,5 +23,5 @@ This function takes away the need to rely on ifelse() to create dummy variables.
 }
 \examples{
 x <- sample(c("Coffee", "Tea", "Hot Chocolate"), replace = TRUE, size = 100)
-as_dummy(x, term = "Coffee")
+as_dummy(x, Coffee)
 }
