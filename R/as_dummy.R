@@ -8,15 +8,11 @@
 #' @param labels If factor = T, a character vector to specify the names of the resulting levels (e.g. c("Tails", "Heads")). Defaults to c("Off", "On").
 #' @return A vector of dummy data.
 #' @examples
-#' x <- sample(c("Coffee", "Tea", "Hot Chocolate"), replace = TRUE, size = 100)
-#' as_dummy(x, Coffee)
+#' x <- sample(c("Coffee", "Tea", "Hot Chocolate"), replace = TRUE, size = 10)
+#' as_dummy(x, "Coffee")
 #' @export
 
-as_dummy <- function(x, ..., factor = T, labels = c("Off", "On")){
-
-  # Convert ellipsis to vector
-
-  terms <- c(...)
+as_dummy <- function(x, ..., factor = F, labels = c("Off", "On")){
 
 
   # Create dummy variable
@@ -26,7 +22,7 @@ as_dummy <- function(x, ..., factor = T, labels = c("Off", "On")){
       is.na(x) == T,
       NA,
       ifelse(
-        x %in% terms,
+        x %in% c(...),
         1,
         0
       )
